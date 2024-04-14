@@ -1,26 +1,36 @@
-import { SITE } from "@config";
 import { defineCollection, z } from "astro:content";
 
-const blog = defineCollection({
-  type: "content",
-  schema: ({ image }) =>
-    z.object({
-      author: z.string().default(SITE.author),
-      pubDatetime: z.date(),
-      modDatetime: z.date().optional().nullable(),
-      title: z.string(),
-      featured: z.boolean().optional(),
-      draft: z.boolean().optional(),
-      tags: z.array(z.string()).default(["others"]),
-      ogImage: image()
-        .refine(img => img.width >= 1200 && img.height >= 630, {
-          message: "OpenGraph image must be at least 1200 X 630 pixels!",
-        })
-        .or(z.string())
-        .optional(),
-      description: z.string(),
-      canonicalURL: z.string().optional(),
-    }),
+function removeDupsAndLowerCase(array: string[]) {
+	if (!array.length) return array;
+	const lowercaseItems = array.map((str) => str.toLowerCase());
+	const distinctItems = new Set(lowercaseItems);
+	return Array.from(distinctItems);
+}
+
+const post = defineCollection({
+	schema: ({ image }) =>
+		z.object({
+			coverImage: z
+				.object({
+					alt: z.string(),
+					src: image(),
+				})
+				.optional(),
+			description: z.string().min(50).max(160),
+			draft: z.boolean().default(false),
+			ogImage: z.string().optional(),
+			publishDate: z
+				.string()
+				.or(z.date())
+				.transform((val) => new Date(val)),
+			tags: z.array(z.string()).default([]).transform(removeDupsAndLowerCase),
+			title: z.string().max(60),
+			updatedDate: z
+				.string()
+				.optional()
+				.transform((str) => (str ? new Date(str) : undefined)),
+		}),
+	type: "content",
 });
 
-export const collections = { blog };
+export const collections = { post };
