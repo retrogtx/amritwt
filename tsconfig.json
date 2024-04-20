@@ -1,44 +1,27 @@
 {
-  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
     "baseUrl": ".",
-    "lib": [
-      "es2022",
-      "dom",
-      "dom.iterable"
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
     ],
-    "paths": {
-      "@/assets/*": [
-        "src/assets/*"
-      ],
-      "@/components/*": [
-        "src/components/*"
-      ],
-      "@/data/*": [
-        "src/data/*"
-      ],
-      "@/layouts/*": [
-        "src/layouts/*"
-      ],
-      "@/utils": [
-        "src/utils/index.ts"
-      ],
-      "@/types": [
-        "src/types.ts"
-      ],
-      "@/site-config": [
-        "src/site.config.ts"
-      ]
-    }
+    "strictNullChecks": true
   },
-  "include": [
-    "./.eslintrc.cjs",
-    "**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/node_modules/*",
-    ".vscode",
-    "dist"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }
