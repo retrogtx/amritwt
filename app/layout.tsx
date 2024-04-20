@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
     default: 'amritwt',
-    template: '%s | Next.js Portfolio Starter',
+    template: '%s',
   },
   description: 'amrit writes whatever he wishes to here.',
   openGraph: {
