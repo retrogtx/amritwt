@@ -6,6 +6,15 @@
   color: #fefefe;
 }
 
+#nav a {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#nav a:hover {
+  background-color: white;
+  color: black;
+}
+
 :root {
   --sh-class: #2d5e9d;
   --sh-identifier: #354150;
