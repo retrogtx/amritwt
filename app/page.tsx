@@ -1,4 +1,5 @@
 import { BlogPosts } from 'app/components/posts'
+import NowPlaying from './components/NowPlaying';
 
 export default function Page() {
   return (
@@ -14,6 +15,7 @@ export default function Page() {
         {'welcome to my space.'}
       </p>
       <div className="my-8">
+        <NowPlaying />
         <BlogPosts />
       </div>
     </section>
