@@ -11,7 +11,7 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'amritwt',
+    default: 'swagat hai',
     template: '%s',
   },
   description: 'amrit writes whatever he wishes to here.',
@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     siteName: 'amritwt',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: `${baseUrl}/img.png`,
+      },
+    ],
   },
   robots: {
     index: true,
@@ -52,6 +57,9 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
+      <head>
+        <link rel="icon" href="/img.png" type="image/x-icon" /> {/* Favicon link */}
+      </head>
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />

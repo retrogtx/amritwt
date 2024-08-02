@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 ::selection {
-  background-color: #47a3f3;
-  color: #fefefe;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 #nav a {
@@ -11,7 +11,7 @@
 }
 
 #nav a:hover {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   color: black;
 }
 

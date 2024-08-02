@@ -21,7 +21,7 @@ export default function Footer() {
       <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
         <li>
           <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100 hover:underline"
             rel="noopener noreferrer"
             target="_blank"
             href="https://github.com/retrogtx"
@@ -32,13 +32,24 @@ export default function Footer() {
         </li>
         <li>
           <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100 hover:underline"
             rel="noopener noreferrer"
             target="_blank"
             href="https://twitter.com/amritwt"
           >
             <ArrowIcon />
             <p className="ml-2 h-7">twitter</p>
+          </a>
+        </li>
+        <li>
+          <a
+            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100 hover:underline"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="mailto:iamamrit27@gmail.com"
+          >
+            <ArrowIcon />
+            <p className="ml-2 h-7">iamamrit27@gmail.com</p>
           </a>
         </li>
       </ul>

@@ -1,21 +1,23 @@
 import { BlogPosts } from 'app/components/posts'
-import NowPlaying from './components/NowPlaying';
 
 export default function Page() {
   return (
     <section>
-      <h1 className="mb-10 text-2xl font-semibold tracking-tighter">
-        amrit's space
-      </h1>
+    <div className='flex flex-col'> 
+      <h1 className="text-4xl font-bold mb-1">
+          amrit rai
+        </h1>
+      <h2 className="text-gray-500 mb-5">
+        self taught engineer
+      </h2>
+    </div>
+
       <p className="mb-10">
-        {`i'm amrit, a 20 year old something guy.`}
+        {`20 year old something guy.`}
         <br />
-        {'i read alot too. i write sometimes.'}
-        <br />
-        {'welcome to my space.'}
+        {'i read alot too. i write sometimes. i like technology.'}
       </p>
       <div className="my-8">
-        <NowPlaying />
         <BlogPosts />
       </div>
     </section>
