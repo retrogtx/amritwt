@@ -4,7 +4,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "vercel-build": "pnpm install --no-frozen-lockfile && next build"
+    "vercel-build": "npm run dev"
   },
   "dependencies": {
     "@tailwindcss/postcss": "4.0.0-alpha.13",
