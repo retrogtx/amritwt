@@ -75,87 +75,99 @@ export const DATA = {
 
   education: [
     {
-      school: "mumbai university",
+      school: "Mumbai University",
       href: "https://linkedin.com/in/amritwt",
-      degree: "electronics & telecommunication",
+      degree: "Electronics & Telecommunication",
       logoUrl: "/mu.png",
       start: "2022",
-      end: "2025 (dropped out)",
+      end: "2025 (Dropped Out)",
     },
   ],
 
   work: [
     {
-      company: "whop",
-      href: "https://whop.com/",
+      company: "Manicule",
+      href: "https://manicule.dev/",
       badges: [],
-      location: "remote",
-      title: "software engineer | fulltime",
-      logoUrl: "/whop.png",
-      start: "feb 2026",
+      location: "Remote",
+      title: "Software Engineer | Fulltime",
+      logoUrl: "/manicule.png",
+      start: "Sept 2026",
       end: "present",
       description:
-        "building whop finance."
+        "The discovery layer for agents."
     },
     {
-      company: "cracked devs",
+      company: "Whop",
+      href: "https://whop.com/",
+      badges: [],
+      location: "Remote",
+      title: "Software Engineer | Fulltime",
+      logoUrl: "/whop.png",
+      start: "Feb 2026",
+      end: "Sept 2026",
+      description:
+        "Building Whop Finance."
+    },
+    {
+      company: "Cracked Devs",
       href: "https://crackeddevs.com/",
       badges: [],
-      location: "remote",
-      title: "software engineer | fulltime",
+      location: "Remote",
+      title: "Software Engineer | Fulltime",
       logoUrl: "/cd.png",
-      start: "august 2025",
-      end: "feb 2026",
+      start: "August 2025",
+      end: "Feb 2026",
       description:
-        "making apps at this studio!"
+        "Making apps at this studio!"
     },
     {
-      company: "orchid",
+      company: "Orchid",
       href: "https://0.email/",
       badges: [],
-      location: "remote",
-      title: "software engineer | fulltime",
+      location: "Remote",
+      title: "Software Engineer | Fulltime",
       logoUrl: "/orchid.png",
-      start: "june 2025",
-      end: "august 2025",
+      start: "June 2025",
+      end: "August 2025",
       description:
-        "let ai handle your email."
+        "Let AI handle your email."
     },
     {
-      company: "google summer of code",
+      company: "Google Summer of Code",
       href: "https://summerofcode.withgoogle.com/",
       badges: [],
-      location: "remote",
-      title: "contributor under google deepmind",
+      location: "Remote",
+      title: "Contributor Under Google DeepMind",
       logoUrl: "/gsoc.png",
-      start: "may 2025",
-      end: "july 2025",
+      start: "May 2025",
+      end: "July 2025",
       description:
-        "evaluating gemini on an open-source benchmark."
+        "Evaluating Gemini on an open-source benchmark."
     },
     {
-      company: "cal.com",
+      company: "Cal.com",
       href: "https://cal.com/",
       badges: [],
-      location: "remote",
-      title: "software engineer | intern",
+      location: "Remote",
+      title: "Software Engineer | Intern",
       logoUrl: "/cal.png",
-      start: "february 2025",
-      end: "may 2025",
+      start: "February 2025",
+      end: "May 2025",
       description:
-        "the best way to schedule meetings."
+        "The best way to schedule meetings."
     },
     {
-      company: "superteam, solana foundation",
+      company: "Superteam, Solana Foundation",
       href: "https://superteam.fun/",
       badges: [],
-      location: "remote",
-      title: "member | grant recipient",
+      location: "Remote",
+      title: "Member | Grant Recipient",
       logoUrl: "/superteam.png",
-      start: "november 2024",
-      end: "september 2025",
+      start: "November 2024",
+      end: "September 2025",
       description:
-        "received a $3000 grant from the solana foundation for solving inheritance through an escrow contract.",
+        "Received a $3000 grant from the Solana Foundation for solving inheritance through an escrow contract.",
     },
   ],
   // projects: [
