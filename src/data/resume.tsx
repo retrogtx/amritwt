@@ -11,7 +11,7 @@ export const DATA = {
   description:
     "20 year old something guy",
   summary:
-  "tldr; learnt by hacking around on the internet. \n\n" +
+  "Tldr; learnt by hacking around on the internet. \n\n" +
   "I like technology. It makes a dent in the universe. \n\n" +
   "I write code agentically. A lot of it.\n\n" +
   "Speed ran content across socials when I was young.\n\n" +
@@ -93,7 +93,7 @@ export const DATA = {
       title: "Software Engineer | Fulltime",
       logoUrl: "/manicule.png",
       start: "Sept 2026",
-      end: "present",
+      end: "Present",
       description:
         "The discovery layer for agents."
     },

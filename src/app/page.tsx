@@ -22,11 +22,11 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-5xl/none"
                 yOffset={8}
-                text={`hi, amrit here`}
+                text={`Hi, Amrit Here`}
               />
               <BlurFade delay={BLUR_FADE_DELAY}>
                 <div className="max-w-[600px] md:text-sm">
-                  been here for <RealTimeAge birthDate={DATA.birthDate} /> years
+                  Been here for <RealTimeAge birthDate={DATA.birthDate} /> years
                 </div>
               </BlurFade>
             </div>
@@ -41,7 +41,7 @@ export default function Page() {
       </section>
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold">about</h2>
+          <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
