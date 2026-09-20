@@ -15,7 +15,7 @@ export const DATA = {
   "I like technology. It makes a dent in the universe. \n\n" +
   "I write code agentically. A lot of it.\n\n" +
   "Speed ran content across socials when I was young.\n\n" +
-  "Right now I just build stuff!\n\n" +
+  "\"Problems are inevitable. Problems are soluble.\" - The Beginning of Infinity\n\n" +
   "If you want to know more about me, [here are somethings I believe in](/blog/things-i-believe).",
 
   avatarUrl: "/me.png",
