@@ -167,7 +167,7 @@ export const DATA = {
       start: "November 2024",
       end: "September 2025",
       description:
-        "Received a $3000 grant from the Solana Foundation for solving inheritance through an escrow contract.",
+        "Received a $3000 grant from the Solana Foundation for solving inheritance.",
     },
   ],
   // projects: [
