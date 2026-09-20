@@ -90,7 +90,7 @@ export const DATA = {
       href: "https://manicule.dev/",
       badges: [],
       location: "Remote",
-      title: "Software Engineer | Fulltime",
+      title: "Member of Technical Staff | Fulltime",
       logoUrl: "/manicule.png",
       start: "Sept 2026",
       end: "Present",
